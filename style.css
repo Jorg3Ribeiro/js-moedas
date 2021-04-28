@@ -1,3 +1,16 @@
 h1, h2 {
   font-family: Lato;
 }
+
+.topo{
+  margin: 0 0;
+  padding: 0 0;
+  height: 40px;
+  background-color: blue;
+}
+
+.topo span{
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
