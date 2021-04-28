@@ -18,27 +18,17 @@
                 <input
                   type="number"
                   class="form-control"
-                  placeholder="moeda25"
+                  placeholder="moeda 25"
                   name="moeda25"
                   id="moeda25"
                 />
               </div>
             <div class="col-md-2">
-              <label> Moeda 20 </label>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="moeda20"
-                name="moeda20"
-                id="moeda20"
-              />
-            </div>
-            <div class="col-md-2">
               <label> Moeda 10 </label>
               <input
                 type="number"
                 class="form-control"
-                placeholder="moeda10"
+                placeholder="moeda 10"
                 name="moeda10"
                 id="moeda10"
               />
@@ -48,9 +38,19 @@
               <input
                 type="number"
                 class="form-control"
-                placeholder="moeda5"
+                placeholder="moeda 5"
                 name="moeda5"
                 id="moeda5"
+              />
+            </div>
+            <div class="col-md-2">
+              <label> Moeda 1 </label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="moeda 1"
+                name="moeda1"
+                id="moeda1"
               />
             </div>
             <div class="col-md-2">
@@ -64,11 +64,13 @@
               />
             </div>            
              <div class="col-md-2" style="margin-top: 23px;">
-              <button type="button" class="btn btn-primary" id="result" onclick="resultado"> Resultado </button>
+              <button type="button" class="btn btn-primary" id="result" onclick="resultado()"> Resultado </button>
             </div>
           </div>
         </div>
       </form>
     </div>
   </div>
+
+  <div id="resultadoValor"></div>
 </div>
