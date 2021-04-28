@@ -7,9 +7,9 @@ import "./js/bootstrap.js";
 (function(w) {
   var resultado = function() {
     let moeda25 = document.getElementById("moeda25");
-    let moeda10 = document.getElementById("moeda20");
-    let moeda5 = document.getElementById("moeda10");
-    let moeda1 = document.getElementById("moeda5");
+    let moeda10 = document.getElementById("moeda10");
+    let moeda5 = document.getElementById("moeda5");
+    let moeda1 = document.getElementById("moeda1");
     let valor = document.getElementById("valor");
     let moedas = [];
     let resultadoTotal = [];
@@ -36,11 +36,24 @@ import "./js/bootstrap.js";
     resultadoTotal.push(valor.value);
 
     let appDiv = document.getElementById("resultadoValor");
-    if (somaMoedas > valor) {
-      appDiv.innerHTML = resultadoTotal + `=  Você pode comprar o item`;
+    if (somaMoedas > valor.value) {
+      appDiv.innerHTML =
+        "[" + moedas + "]" + "," + valor.value + `=  Você pode comprar o item`;
     } else {
-      appDiv.innerHTML = resultadoTotal + `=  Você não pode comprar o item`;
+      appDiv.innerHTML =
+        "[" +
+        moedas +
+        "]" +
+        "," +
+        valor.value +
+        `=  Você não pode comprar o item`;
     }
+
+    moeda25.value = null;
+    moeda10.value = null;
+    moeda5.value = null;
+    moeda1.value = null;
+    valor.value = null;
   };
 
   w.resultado = resultado;
